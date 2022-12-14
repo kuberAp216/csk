@@ -1,0 +1,74 @@
+<html>
+<body>
+<script>
+  let counter = 0;
+  for (let loopVar =0; loopVar < 5; loopVar++) {
+	  counter = counter + 1;
+	  console.log(counter);
+} 
+
+let counter1 = 0;
+let loopVar1 = 0;
+while (loopVar1 < 5) {
+	console.log(loopVar1);
+	counter1++;
+	loopVar1++;
+	console.log(counter1);
+} 
+
+function multi(num1,num2)
+{
+  return num1+num2;
+}
+console.log(multi(5,10));
+
+function multiply(num1, num2) {
+	if (num2 == undefined) {
+		num2 = 1;
+	}
+	return num1 * num2;
+}
+console.log(multiply(5, 6)); // 30
+console.log(multiply(5,2)); // 5
+
+ function showNumbers(x, y, z)
+ {
+    return y;
+ }
+console.log(showNumbers(1, 2, 3, 4, 5)); // [3,4,5]
+console.log(showNumbers(3, 4, 5, 6, 7, 8, 9, 10)); // [5,6,7,8,9,10]
+
+let myArray = ["kuber", "bhimu", "ranjita","manju"];
+//function showDetails([2,3]) {
+//	console.log(2);
+//	console.log(3);
+//}
+console.log(myArray[2]);
+console.log(myArray[3]);
+
+class Calculator {
+	constructor(num1, num2){  // Constructor used for initializing the class instance
+	
+		/* Properties initialized in the constructor */
+		this.num1 = num1;
+		this.num2 = num2;
+	}
+	/* Methods of the class used for performing operations */
+	add() {
+		return this.num1 + this.num2;
+	}
+	subtract() {
+		return this.num1 - this.num2;
+	}
+}
+let calculator = new Calculator(300, 100); // Creating Calculator class object or instance
+console.log("Add method returns" + calculator.add()); // Add method returns 400. 
+console.log("Subtract method returns" + calculator.subtract()); // Subtract method returns 200. 
+
+
+
+
+
+</script>
+</body>
+</html>
